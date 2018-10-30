@@ -4,15 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { MessagesModule } from './messages/messages.module';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     HeroesModule,
-    MessagesModule
+    MessagesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
